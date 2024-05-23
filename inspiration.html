@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="butik 1000 ting, inspiration, interiøer, Århus, brugskunst, Jægergårdsgade, inspirationsprodukter">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Baskervville:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+    <script src="scripttre.js" defer></script>
+    <title>Inspiration</title>
+</head>
+<body>
+        
+        <!-- Menu til mobile -->
+
+        <header>
+            <a href="index.html"><img id="logo" src="img/logo.png" alt="logo"></a>
+            <img id="burgerknap" src="img/burger.png" alt="burgermenu">
+            
+                
+            <nav id="burgermenu">
+                <a id="lukmenu" href="#">X</a>  
+                
+                <div class="div_menupunkt">
+                    <a id="menu_inspo" class="menupunkt" href="#">Inspiration</a>
+                    <img id="pil_inspo" src="img/pil.png" alt="pil op">
+                </div>
+                <div id="sub_inspo" class="submenu">
+                    <a href="inspiration.html">Vis alle</a>
+                    <a href="#">Badeværelse</a>
+                    <a href="#">Soveværelse</a>
+                    <a href="#">Køkken</a>
+                    <a href="#">Stue</a>
+                    <a href="#">Udendørs</a>
+                </div>
+                <a class="menupunkt" href="unikke.html">Unikke nips</a>
+                <div class="div_menupunkt">
+                    <a id="menu_butikken" class="menupunkt" href="#">Om butikken</a>
+                    <img id="pil_butikken" src="img/pil.png" alt="pil op">
+                </div>
+                <div id="sub_butikken" class="submenu">
+                    <a href="butikken.html">Butikkens historie</a>
+                    <a href="butikken.html#mette_overskrift">Mettes historie</a>
+                </div>
+                <div class="div_menupunkt">
+                    <a id="menu_kontakt" class="menupunkt" href="#">Kontakt</a>
+                    <img id="pil_kontakt" src="img/pil.png" alt="pil op">
+                </div>
+                <div id="sub_kontakt" class="submenu">
+                    <a href="kontakt.html">Kontaktoplysninger</a>
+                    <a href="kontakt.html#findbutikken">Find butikken</a>
+                </div>
+            </nav>
+            
+        <!-- Menu til desktop -->
+
+            <nav>
+                <ul class="navbar_desktop">
+                    <li>
+                        <a href="inspiration.html">Inspiration</a>
+                        <ul class="submenu_desktop">
+                            <li><a href="inspiration.html#badevaerelse">Badeværelse</a></li>
+                            <li><a href="inspiration.html#sovevaerelse">Soveværelse</a></li>
+                            <li><a href="inspiration.html#kokken">Køkken</a></li>
+                            <li><a href="inspiration.html#stue">Stue</a></li>
+                            <li><a href="inspiration.html#udendors">Udendørs</a></li>
+                        </ul>
+                    </li>   
+                    <li>
+                        <a href="unikke.html">Unikke nips</a>
+                    </li>   
+                    <li class="logo">
+                        <a href="index.html"><img src="img/logodesktop.png" alt="Logo"></a>
+                    </li>
+                    <li>
+                        <a href="butikken.html">Om butikken</a>
+                        <ul class="submenu_desktop">
+                            <li><a href="butikken.html#overskrift_butik">Butikkens historie</a></li>
+                            <li><a href="butikken.html#mette_overskrift">Mettes historie</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="kontakt.html">Kontakt</a>
+                        <ul class="submenu_desktop">
+                            <li><a href="kontakt.html">Find butikken</a></li>
+                        </ul>
+                    </li>   
+                </ul>
+            </nav>
+        </header>
+
+<main>
+
+    <h1 class="overskrifter" id="overskrift_inspiration">INSPIRATION</h1>
+
+    <div class="filtrering">
+        <div id="filter_bad">BADEVÆRELSE</div>
+        <div id="filter_sov">SOVEVÆRELSE</div>
+        <div id="filter_kokken">KØKKEN</div>
+        <div id="filter_stue">STUE</div>
+        <div id="filter_uden">UDENDØRS</div>
+    </div>
+
+
+    <div id="badevaerelse" class="center">
+        <h2 class="overskrifter_inspiration">BADEVÆRELSE</h2>
+        <p class="tekst_boks">Hos os finder du ikke kun unikke produkter, men vi har også en lang række af selvplejende produkter.</p>
+        
+        <p class="styling_priser" id="shampoo_balsam">Shampoo og balsam <b>125,-</b></p>
+        <img class="bad_billede_et" src="img/selvpleje.jpg" alt="selvplejeprodukter">
+        <p class="styling_priser" id="selvpleje_pris">Selvpleje fra <b>60,-</b></p>
+
+        <img class="bad_billede_to" src="img/toilettasker.jpg" alt="toilettasker">
+        <p class="styling_priser" id="toilettasker">Lækre toilettasker i 3 forskellige størrelser <b>200,-</b> &  <b>300,-</b></p>
+    </div>
+    
+    <div id="sovevaerelse" class="center">
+        <h2 class="overskrifter_inspiration">SOVEVÆRELSE</h2>
+        <p class="tekst_boks">Vi har flere lækre sæt tøj og et bredt udvalg af plakater til din boligindretning</p>
+        <p class="styling_priser" id="morgenkaabe_priser">Priser fra <b>200,-</b></p>
+        <p class="styling_priser" id="kjole_priser">Kjoler <b>700,</b>-</p>
+        <p class="styling_priser" id="plakater_priser">Plakater med ramme <b>450,-</b></p>
+        
+
+        <img class="sove_billede_et" src="img/morgenkaabe.jpg" alt="morgenkaaber">
+            
+        <div class="inspiration_container">
+             <img src="img/kjoler.jpg" alt="kjoler">
+            <img src="img/plakater.jpg" alt="plakater">
+        </div>
+    </div>  
+
+    <div id="kokken" class="center">
+        <h2 class="overskrifter_inspiration">KØKKEN</h2>
+        <p class="tekst_boks">Her finder du en række billeder, som vi håber kan give noget boligindretnings inspiration til dit køkken. Her viser vi også, hvordan du kan kompinere vores udvalg med andre stykker interiør design</p>
+
+        <div id="ovn_fisk_container">
+            <img id="ovnfaste_fade" class="kokken_billeder" src="img/ovnfast_fade.jpg" alt="ovnfaste fade">
+            <p class="styling_priser" id="ovnefaste_priser">Ovnfaste fade i forskellige størrelser fra <b>25,-</b> til <b>180,-</b></p>
+
+            <img id="fiskefad" class="kokken_billeder" src="img/fisk_fad.jpg" alt="Glas og fad">
+            <p class="styling_priser" id="glas_priser">Glas <b>49,-</b> 5 stk. 200,-</p>
+        </div>
+        <p id="fisk_boks">De ovnfaste fade kan også bruges som et nyt pift til bordopdækningen. Kombiner dem med vores farvede glas og sjove fisk</p>
+        <img id="fisk" src="img/fisk.png" alt="Fisk">
+        <p class="styling_priser" id="fisk_priser">Fisk <b>240,-</b></p>
+
+        <div id="braet_kopper_container">
+            <img class="kokken_billeder" src="img/skaerebraet.jpg" alt="skaerebraetter">
+            <p class="styling_priser" id="skaerebraet_priser">Bredt udvalg af skærebrætter <b>265,-</b></p>
+            <img class="kokken_billeder" src="img/kopper.jpg" alt="kopper">
+            <p class="styling_priser" id="kopper_priser">Kopper fra <b>89,-</b></p>
+        </div>
+
+        <p id="kopper_boks">Vi byder på mange unikke håndlavede keramiske kopper, som både pynter og holder kaffen varm</p>
+        <p class="styling_priser" id="kop_pris">kop <b>200,-</b></p>
+        <img id="kop" src="img/kop.png" alt="kop">
+    </div>
+
+    <div id="stue" class="center">
+        <h2 class="overskrifter_inspiration">STUE</h2>
+        <p class="tekst_boks">Find indspiration til udsmykning af din stue. Hos os finder du et et farverigt og personligt udvalg af puder, tæpper & pynt</p>
+        <div id="puder_container" class="inspiration_container">
+            <img src="img/puder.jpg" alt="puder">
+            <p class="styling_priser" id="puder_pris">Smukke puder med fyld fra <b>599,-</b></p>
+            <img src="img/tapet.jpg" alt="tapet">
+            <p class="styling_priser" id="tapet_priser">Forskellig udvalg af tapet <b>80,-</b></p>
+        </div>
+        <div id="pynteting_tekst_container">
+            <img id="pynteting" src="img/pynteting.jpg" alt="pynteting">
+            <p class="styling_priser" id="pynteting_priser">Kom ned og oplev alverdens pynteting, lysestager og vægpynt fra <b>30,-</b></p>
+        </div>
+    </div>
+
+    <div id="udendors" class="center">
+        <h2 class="overskrifter_inspiration">UDENDØRS</h2>
+            <p class="tekst_boks"> I vores butik finder du produkter til din terasse, altan eller have, herindunder bl.a. krukker, krydderurter og blomster</p>
+        <div class="urter_container">
+            <img id="krukker" src="img/krukker.jpg" alt="krukker">
+            <p class="styling_priser" id="krukker_pris">Forkæl dig selv med en lækker krukke til planter. Udendørs og indendørs <b>100,-</b></p>
+        
+            <div id="blomster_container" class="inspiration_container">
+                <img src="img/urter.jpg" alt="krydderurter">
+                <p class="styling_priser" id="blomster_pris">Kom forbi og køb vores fine blomster <b>100,-</b></p>
+                <img src="img/blomster.jpg" alt="blomster">
+            </div>
+        </div>
+    </div>
+
+    <section id="besog_section">
+        <h3 class="besog_os">Kom ned og besøg os!</h3>
+        <div id="inspo_bund" class="knap_videre">
+            <a href="kontakt.html">
+            FIND OS HER</a>
+        </div>
+    </section>
+
+
+</main>
+     
+<footer>
+    
+<section id="footer_inspo" class="section_footer">
+
+    <div id="tider_footer">
+        <h4>ÅBNINGSTIDER</h4>
+        <p class="p_footer">Man-Fre kl. 11-17:30</p>
+        <p class="p_footer">Lørdag kl. 10-14</p>
+        <p class="p_footer">Søndag-lukket</p>
+    </div>
+
+    <div class="grid-container">
+        <div id="kontakt_footer">
+            <h4>KONTAKT OS</h4>
+        </div>
+        
+        <div class="grid-item">
+            <img class="billeder_footer" src="img/telefon.png" alt="telefon">
+            <a href="tel:+4593936244" class="links_footer">+45 93 93 62 44</a>
+        </div>
+        <div class="grid-item">
+            <img class="billeder_footer" src="img/mail.png" alt="mail">
+            <a href="mailto:butik1000ting@outlook.com" class="links_footer"> butik1000ting@outlook.com</a>
+        </div>
+    </div>
+    
+
+    <div id="findos_footer">
+
+        <h4>FIND OS</h4>
+
+        <p class="p_footer">Jægergaardsgade 20</p>
+        <p class="p_footer">8000 Århus C</p>
+        
+    </div>
+
+<div id="folgos_footer">
+
+    <h4>FØLG OS</h4>
+
+    <a href="http://www.facebook.com/butik1000ting" target="_blank">
+        <img class="billeder_footer_some" src="img/facebook.png" alt="facebook">
+    </a>
+
+    <a href="http://www.instagram.com/butik1000ting" target="_blank">
+        <img class="billeder_footer_some" src="img/insta.png" alt="instagram">
+    </a>
+</div>
+
+<hr id="hr_et">
+
+<div id="footer_logo_mobile">
+<a href="index.html">
+    <img src="img/footermobilelogo.png" alt="logo">
+</a>
+</div>
+
+
+<div id="footer_logo_desktop">
+<a href="index.html">
+    <img id="logo_skygge_footer" src="img/logo.png" alt="logo">
+</a>
+</div>
+
+</section>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,2231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+  
+body {
+	line-height: 1;
+    font-family: "Baskervville", serif;
+    font-weight: lighter;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 105px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 10;
+}
+
+/* LOGO */
+
+#logo {
+    width: 80px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    overflow: hidden;
+    z-index: 7;
+    
+}
+
+/*GENEREL STYLING TIL MOBILE*/
+p{
+  font-family: "Arimo", sans-serif;
+  color: #383838;
+  line-height: 1.3;
+  font-size: 0.7rem;
+}
+
+main {
+    margin-top: 105px; /* Starter hvor headeren slutter*/
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    color: #5d4b4b;
+}
+
+.overskrift_lyserod {
+    color: #edc6c6;
+    padding-top: 10%;
+}
+
+.hvid_p {
+    color: #fff;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    color: #5d4b4b;
+    font-size: 1rem;
+}
+
+
+/* BURGERMENU */
+#burgerknap {
+    width: 50px;
+    position: fixed;
+    right: 15px;
+    top: 30px;
+    overflow: auto;
+    z-index: 111;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 80px; 
+}
+
+
+
+
+#burgermenu {
+    height: 700px;
+    width: 100%;
+    background-color: #5d4b4b;
+    z-index: 5;
+    display: none;
+}
+
+
+#burgermenu a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.menupunkt {
+    color: #edc6c6;
+    font-size: xx-large;
+    padding: 15px;
+}
+
+#lukmenu {
+    margin-left: 300px;
+    padding-top: 40px;
+    font-size: xx-large;
+    color: #fff;
+}
+    
+.submenu a {
+    font-size: large;
+    color: #fff;
+    padding: 10px;
+}
+
+#sub_inspo{
+    display: none;
+}
+
+#sub_butikken{
+    display: none;
+}
+
+#sub_kontakt{
+    display: none;
+}
+
+/* Her har vi skjult submenuerne, så de ikke bliver vist under hovedmenupunkterne*/
+#pil_inspo {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    display: none;
+}
+
+#pil_butikken {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    display: none;
+}
+
+#pil_kontakt {
+    width: 20px;
+    height: 20px;
+    margin-top: 25px;
+    display: none;
+}
+
+.div_menupunkt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Fjerner header til desktop */
+
+.navbar_desktop {
+    display: none;
+}
+
+/* FORSIDE MOBILE STARTER HER*/
+
+#start_billede{
+    position: relative;
+}
+
+.forsidebillede {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+/*overlay af teksten på start billedet */
+
+#start_billede h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    line-height: 1.2;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+
+
+/*h2 og overskrift til siden */
+
+.h2_populaer {
+    color: white;
+}
+
+#forside_overskrift{
+    display: flex;
+    text-align: center;
+    line-height: 1.2;
+    color: #fff;
+}
+
+/* section 1 */
+
+#grid_container_forside img {
+    width: 90%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#grid_container_forside p {
+    margin: 10%;
+    font-size: 0.7rem;
+}
+
+#grid_container_forside {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+/*section 2 */
+
+#section_forside_to{
+    background-color: #5d4b4b;
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+#section_forside_to p {
+    font-size: 0.8rem;
+    margin: 5%;
+    display: flex;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#section_forside_to h2 {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+#section_forside_to img {
+    width: 40%;
+    background-color: #edc6c6;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+/*forside billeder hvor kun halvdelen vises på mobile*/
+
+.birkerod_forside_billeder_mobile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.birkerod_forside_billeder_desktop {
+   display: none;
+}
+
+.maileg_forside_billeder_mobile {
+    display: flex;
+    justify-content: space-around;
+}
+
+.maileg_forside_billeder_desktop {
+    display: none;
+}
+
+/*knapper på forsiden*/
+
+.knapper_forside {
+    margin: 5% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #edc6c6;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    width: fit-content; 
+    font-size: 0.8rem;
+    text-align: center; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.knapper_forside a {
+    text-decoration: none;
+    color: #5d4b4b;
+}
+
+.knap_videre {
+    margin: 5% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #5d4b4b;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    width: fit-content; 
+    font-size: 0.8rem;
+    text-align: center; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #edc6c6;
+}
+
+.knap_videre a {
+    text-decoration: none;
+    color: #edc6c6;
+}
+
+/*billede karusel*/
+
+.billede_karusel img {
+    width: 70%;    
+}
+
+.billede_karusel {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+}
+
+/*billederne af pile til karuselslider i section 3*/
+
+#venstrepil{
+ width: 10%;
+ height: 5%;
+}
+
+#hoejrepil{
+    width: 10%;
+    height: 5%;
+}
+
+/*section 4*/
+
+#section_forside_fire {
+    background-color: #5d4b4b;
+}
+
+.billede_karusel_kunder img {
+    width: 60%;
+}
+
+.billede_karusel_kunder {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+/*billederne af pile til karuselslider 4*/
+
+#venstrepil2{
+    width: 10%;
+    height: 5%;
+}
+   
+#hoejrepil2{
+    width: 10%;
+    height: 5%;
+}
+
+/* INSPIRATIONS SIDE MOBILE STARTER HER*/
+/*Styling af div, så de ligner knapper*/
+#overskrift_inspiration{
+    padding-top: 10%;
+}
+
+#besog_section {
+    display: block;
+    margin-top: 5%;
+}
+
+.filtrering {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filtrering div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: solid 1px #edc6c6;
+    width: 35%;
+    height: 20px;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 30px;
+    font-size: small;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.filtrering div:hover {
+    background-color: #edc6c6;
+}
+
+/* Styling af overskrifterne */
+.overskrifter_inspiration {
+    color: #5d4b4b;
+    text-align: center;
+    margin-top: 13%;
+}
+
+/* styling af inspirations content */
+
+.tekst_boks {
+    font-size: small;
+    background-color: #edc6c6;
+    width: 55%;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: -10%;
+    margin-top: 5%;
+    z-index: 1;
+
+}
+
+.bad_billede_et{
+    width: 70%;
+    padding: 5%;
+}
+
+.bad_billede_to {
+    width: 80%;
+    padding: 5%;
+}
+
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+   
+}
+b {
+    font-size: 1.5rem;
+}
+
+.styling_priser {
+    color: #ffffff;
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    line-height: 1.5;
+    text-shadow: 0px 2px 6px rgba(0, 0, 0, 1);
+}
+
+/*Styling af tekst på badeværelse */
+#shampoo_balsam{
+    top: 19%;
+    right: 18%;
+    width: 40%;
+}
+
+#selvpleje_pris{
+   top: 50%;
+   width: 20%;
+   left: 20%;
+}
+
+#toilettasker{
+    top: 65%;
+    width: 45%;
+    right: 15%;
+}
+
+/* Styling af tekst for soveværelse*/
+#morgenkaabe_priser{
+    top: 52%;
+    right: 8%;
+}
+
+#kjole_priser{
+    bottom: 3%;
+    left: 10%;
+}
+
+#plakater_priser{
+    bottom: 5%;
+    width: 30%;
+    right: 10%;
+}
+
+/*Generel styling af billeder i container*/
+
+#ovn_fisk_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#braet_kopper_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspiration_container {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+    padding: 2%;
+    
+}
+.inspiration_container img {
+    width: 90%;
+    padding: 2%;
+}
+
+
+/* styling af billeder for soveværelset*/
+.sove_billede_et {
+    width: 90%;
+    padding: 5%;
+}
+
+/* Styling af tekst for køkken */
+
+#ovnefaste_priser{
+    top: 30%;
+    width: 45%;
+    right: 12%;
+}
+
+#glas_priser{
+    top: 50%;
+    width: 23%;
+    right: 30%;
+}
+
+#fisk_priser{
+    top: 66%;
+    right: 65%;
+    width: 3%;
+    z-index: 6;
+}
+
+/* Styling af tekstboks*/
+#fisk_boks{
+    font-size: small;
+    background-color: #edc6c6;
+    width: 55%;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 5%;
+    padding-bottom: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    right: 5%;
+    top: 61%;
+    position: absolute;
+    z-index: 5;
+}
+
+#skaerebraet_priser{
+    top: 77%;
+    width: 30%;
+    right: 15%;
+}
+
+#kopper_priser{
+    top: 87%;
+    right: 65%;
+    width: 20%;
+}
+
+/* Styling af tekstboks*/
+#kopper_boks{
+    font-size: small;
+    background-color: #edc6c6;
+    width: 40%;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 5%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 5%;
+    top: 97%;
+    z-index: 1;
+}
+
+#kop_pris{
+    top: 101%;
+    width: 2%;
+    z-index: 4;
+}
+
+/* styling af billeder for køkken*/
+
+.kokken_billeder {
+    width: 80%;
+    padding: 3%;
+    
+}
+
+#fiskefad{
+    margin-bottom: 28%;
+}
+
+#fisk {
+    width: 50%;
+    z-index: 5;
+    position: absolute;
+    bottom: 29%;
+    left: 15%;
+}
+
+#kop {
+    position: absolute;
+    width: 40%;
+    margin-left: 35%;
+    top: 98%;
+    z-index: 3;
+}
+
+/* Styling af tekst for stue*/
+
+#stue{
+    margin-top: 35%;
+}
+
+#puder_pris{
+    width: 40%;
+    top: 25%;
+    left: 5%;
+}
+
+#tapet_priser{
+    top: 45%;
+    right: 5%;
+    width: 40%;
+}
+
+#pynteting_priser{
+    top: 85%;
+    right: 11%;
+    width: 55%;
+}
+
+/*Styling af billeder på stue siden*/
+
+#pynteting {
+    max-width: 80%;
+    padding: 2%;
+}
+
+#pynteting_tekst_container{
+    display: flex;
+    justify-content: center;
+}
+
+/* Styling af tekst for udendørs*/
+
+#krukker_pris{
+    top: 43%;
+    right: 5%;
+    width: 50%;
+}
+
+#blomster_pris{
+    top: 85%;
+    left: 10%;
+    width: 40%;
+}
+
+/*Styling af billeder for udendørs*/
+
+#krukker {
+    max-width: 90%;
+    padding: 2%;
+}
+
+.urter_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/*Knap i bunden af inspirations underside*/
+
+.besog_os {
+    text-align: center;
+    margin-top: 10%;
+}
+#inspo_bund {
+    margin-bottom: 1%;
+}
+
+#footer_inspo {
+    margin-top: 35%;
+}
+
+/* UNIKKE NIPS UNDERSIDE MOBILE STARTER HER*/
+
+/* tegninger der bevæger sig*/
+
+.tip-animation {
+    animation: tip 2s infinite;
+}
+
+@keyframes tip {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.tegninger_unik {
+    width: 20%;
+}
+
+.tegninger_container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.tegning_unik_container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+/* p til siden*/
+
+#p_unik {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 0.9rem;
+}
+
+/* container og billeder til billedegalleri*/
+
+#unik_container img{
+    width: 90%;
+}
+
+#unik_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    padding: 0 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    transition: all 2s;
+    opacity:0;
+}
+
+/* billede der kun skal vises på desktop i billedegalleriet*/
+
+#to_billeder{
+    display: none;
+}
+
+/* container til Find mere inspiration*/
+
+.unik_container_to img {
+    width: 85%;
+    margin-bottom: 8%;
+}
+
+.unik_container_to img:hover {
+    transform: scale(1.05); 
+  }
+
+.unik_container_to {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin-top: 10%;
+}
+
+.unik_container_to > :nth-last-child(-n+1) {
+    grid-column: span 2; 
+    width: 53%;
+    margin-left: 24%;
+    margin-top: -4%;
+}
+
+
+/* OM BUTIKKEN UNDERSIDE MOBILE STARTER HER */
+
+/* overskriftskrifte og generel p til siden*/
+
+#overskrift_butik {
+    padding-top: 10%;
+}
+
+.p_butikken{
+    display: flex;
+    text-align: center;
+    padding-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.8;
+    margin-top: 10%;
+    font-size: 1rem;
+}
+
+.p_butikken_nederst {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.8;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 0.9rem;
+}
+
+/* video der ikke skal vises på mobile men på desktop */
+
+#video_desktop {
+    display: none;
+}
+
+/* video der ikke skal vises på dekstop men på mobile */
+
+#video_mobil {
+    width: 100%;
+}
+
+/* 3 runde billeder */
+
+#billeder_butikken {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#billeder_butikken img{
+    width: 70%;
+    margin-bottom: 10%;
+}
+
+/* section 2 */
+
+#section_to_butikken{
+    background-color: #5d4b4b;
+}
+
+/* hvid skrift */
+
+.hvid_p_butikken {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    line-height: 1.8;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 0.9rem;
+}
+
+/* div med billede af mette i */
+
+.mette_hvid {
+    display: flex;
+    justify-content: center;
+}
+
+#mette_hvid_img {
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+/* styling til infographic */
+/* cirkler */
+
+.cirkel {
+    margin: 5% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #5d4b4b;
+    border-radius: 100%;
+    padding: 10px 20px; 
+    width: 6%;
+    color: #edc6c6;
+    margin-top: 10%;
+}
+
+/* skrift til tallene i cirklerne */
+
+.info_p_tal {
+    color: #edc6c6;
+    font-size: 2rem;
+}
+
+/* den lodrette streg */
+
+.hr_lodret{
+    margin-top: 15%;
+    width: 20%;
+    transform: rotate(90deg);
+    background-color: #5d4b4b;
+}
+
+/* div med billeder*/
+
+.billeder_infographic {
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.billeder_infographic img {
+    width: 20%;
+}
+
+/* h2'erne*/
+
+.h2_info{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 1rem;
+    font-family: "Arimo", sans-serif;
+}
+
+/* de vandrette streger*/
+
+.hr_vandret {
+    width: 20%;
+    background-color: #5d4b4b;
+}
+
+/* infoteksten*/
+
+.p_info {
+    display: flex;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-top: 3%;
+    line-height: 1.8;
+}
+
+/* section med forhandlere*/
+
+#section_forhandlere {
+    background-color: #5d4b4b;
+}
+
+
+#forhandler_overskrift{
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* div med runde billeder*/
+
+.leverandor {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.leverandor img{
+    width: 30%;
+    padding-bottom: 10%;
+}
+
+/*den hvide skrift til p'erne på siden*/
+
+.hvid_p_butikken{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*container der kun skal vise sig på desktop*/
+
+.tal_grid_container{
+    display: none;
+}
+
+
+/* KONTAKT UNDERSIDE MOBILE STARTER HER */
+
+#overskrift_kontakt {
+    padding-top: 5%;
+}
+
+.kontaktoplysninger {
+    display: flex;
+    flex-direction: column;
+}
+
+#findbutikken {
+    margin-top: 2%;
+}
+
+.oplysninger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.oplysninger img {
+    width: 100%;
+}
+
+.oplysninger a {
+    width: 15%;
+    padding: 20px;
+}
+
+/* Illustration */
+.illustration_kontakt img {
+    width: 100%;
+    margin-top: 3%;
+}
+
+#aarhus {
+    color: #edc6c6;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+.oplysninger_illustration {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 0.5rem;
+    line-height: 1.5;
+    margin-bottom: 20%;
+}
+
+.illustration_info {
+    text-align: end;
+}
+
+/* ERROR SIDE MOBILE STRATER HER */
+
+/* knapper på siden */
+
+.knap_error {
+    margin: 5% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: #5d4b4b;
+    border-radius: 20px;
+    padding: 10px 20px; 
+    width: 30%;
+    font-size: 0.8rem;
+    text-align: center; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.knap_error a {
+    text-decoration: none;
+    color: #edc6c6;
+}
+
+/* motion graphic */
+
+#fejl_video {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/*skrifter på siden */
+
+#p_error {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+#error_overskrift{
+    display: flex;
+    text-align: center;
+    padding-top: 10%;
+}
+
+/* FOOTER STARTER HER*/
+
+/*section footer */
+
+.section_footer {
+    background-color: #edc6c6;
+    color: #5d4b4b;
+    display: flex;
+    flex-direction: column;    
+    text-align: center;
+    line-height: 2;
+}
+
+/*grid */
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/*p i footer */
+
+.p_footer {
+    color: #383838;
+    font-size: smaller;
+    line-height: 2rem;
+}
+
+/*åbningsider */
+
+#tider_footer {
+    margin-top: 5%;
+}
+
+/*kontakt */
+
+#kontakt_footer {
+    margin-top: 5%;
+}
+
+.links_footer {
+    text-decoration: none;
+    color: #383838;
+    font-size: smaller;
+    font-family: "Arimo", sans-serif;
+}
+
+/*følg os*/
+
+#folgos_footer{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#folgos_footer a {
+    text-decoration: none;
+}
+
+/*find os*/
+
+#findos_footer{
+    margin-top: 5%;
+}
+
+/*billede ikoner */
+
+.billeder_footer {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.billeder_footer_some{
+    width: 13%;
+    margin-top: 2%;
+}
+
+/* vandret streg*/
+
+#hr_et {
+    border: none; 
+    background-color: white; 
+    height: 1px; 
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(247, 0, 0, 0.1); 
+}
+
+/*logo i footer der tilpasse sig mobile */
+
+#footer_logo_mobile img {
+    width: 50%;
+    margin-top: 5%;
+    
+}
+
+#footer_logo_desktop {
+    display: none;
+}
+
+
+/* HER STARTER VORES STYLE TIL DESKTOP*/
+
+@media only screen and (min-width: 768px) {    
+
+/* GENEREL STYLING TIL DESKTOP*/
+
+.overskrifter{
+    font-size: 2.5rem;
+}
+
+.overskrift_lyserod{
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.knap_videre:hover{
+    transform: scale(1.05);
+}
+.knap_error:hover{
+    transform: scale(1.05);
+}
+
+.knapper_forside:hover {
+    transform: scale(1.05);
+}
+
+/* HEADER DESKTOP*/
+
+#logo {
+    display: none;
+}
+
+#burgerknap {
+    display: none;
+}
+
+#burgermenu {
+    display: none;
+}
+
+.navbar_desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.navbar_desktop > li > a {
+    color: #5d4b4b;
+    text-decoration: none;
+    padding-top: 10%;
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: 100%;
+}
+
+.navbar_desktop > li {
+    position: relative;
+
+}
+.logo img {
+    height: 90px; 
+    width: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+.submenu_desktop {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14rem;
+    list-style: none;
+    margin-top: 0;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.submenu_desktop li a {
+    padding: 0.7rem 1.5rem ;
+    display: block;
+    color: #5d4b4b;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.submenu_desktop li a:hover {
+    background-color: #edc6c6;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar_desktop > li:hover .submenu_desktop {
+    display: block;
+}
+
+.navbar_desktop a {
+    text-decoration: none;
+}
+
+/* FORSIDE DESKTOP STARTER HER*/
+
+/* Forside billede med overlay tekst */
+
+
+#start_billede h1{
+   font-size: 3rem;
+   width: 30%;
+}
+
+/* section 1 */
+
+#grid_container_forside img {
+    width: 80%;
+}
+
+#grid_container_forside p {
+    font-size: 1rem;
+}
+
+#grid_container_forside {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 0;
+}
+
+/* section 2 */
+
+#h2_populaer {
+    color: rgb(255, 255, 255);
+}
+
+#section_forside_to p {
+    font-size: 1.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#section_forside_to img {
+    width: 35%;
+}
+
+#section_forside_to h2 {
+    font-size: 2rem;
+}
+
+/* billeder der alle skal vises på desktop  */
+
+#birkerod_forside_billeder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.birkerod_forside_billeder_desktop {
+   display: flex;
+   justify-content: space-around;
+}
+
+.maileg_forside_billeder_desktop {
+    display: flex;
+    justify-content: space-around;
+}
+
+#maileg_forside_billeder{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* knapper forside */
+
+.knapper_forside {
+    font-size: 1.3rem;
+}
+
+.knap_videre {
+    font-size: 1.3rem;
+}
+
+/* section 3 */
+
+/* billede karusel */
+
+.billede_karusel img {
+    width: 50%;
+}
+
+.billede_karusel {
+    margin-top: 5%;
+}
+
+/* billeder af pile til karusellen */
+
+#venstrepil, #hoejrepil{
+    width: 6%;
+}
+
+/* section 4 */
+
+/* billedekarusel til section 4*/
+
+.billede_karusel_kunder{
+    margin-top: 5%;
+}
+
+.billede_karusel_kunder img {
+    width: 25%;
+}
+
+/* billeder af pile til billedekarusellen i section 4 */
+
+#venstrepil2, #hoejrepil2{
+    width: 6%;
+}
+
+/* HER STARTER STYLE TIL INSPIRATIONSSIDE TIL DESKTOP*/
+
+#footer_inspo {
+    margin-top: 15%;
+}
+
+/*Filtrering*/
+.filtrering {
+    flex-wrap: nowrap;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.filtrering div {
+    border-radius: 50px;
+    padding: 1%;
+    font-size: 80%;
+    
+}
+/* Overskrift */
+#overskrift_inspiration{
+    margin: 0;
+    padding: 0;
+    padding-top: 5%;
+}
+
+.overskrifter_inspiration{
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+/* Styling af tekstbokse*/
+.tekst_boks {
+    width: 25%;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+/* Styling af billeder for badeværelse*/
+
+#badevaerelse h2 {
+    margin-bottom: 3%;
+}
+
+.bad_billede_et {
+    max-width: 25%;
+    right: 15%;
+    top: 45%;
+    padding: 0;
+    position: relative;
+}
+
+.bad_billede_to{
+    max-width: 25%;
+    right: 20%;
+    top: 50%;
+    position: absolute;
+}
+
+
+/* styling af priser for badeværelse*/
+
+#shampoo_balsam{
+    width: 13%;
+    top: 55%;
+    left: 35%;
+}
+
+#selvpleje_pris {
+    top: 85%;
+}
+
+#toilettasker {
+    width: 13%;
+    left: 60%;
+    top: 70%;
+}
+
+/* Styling af billeder til soveværelse*/
+#sovevaerelse {
+    margin-top: 13%;
+    
+}
+
+.sove_billede_et {
+    position: relative;
+    width: 50%;
+    
+}
+
+/* Styling af priser */
+
+.inspiration_container {
+    top: 90%;
+}
+
+.inspiration_container img {
+    width: 50%;
+}
+
+#morgenkaabe_priser {
+    top: 45%;
+    right: 30%;
+}
+
+#kjole_priser{
+    top: 85%;
+    left: 35%;
+}
+
+#plakater_priser{
+    top: 85%;
+    right: 30%;
+    width: 13%;
+}
+
+/* Styling af billeder for køkken*/
+.kokken_billeder {
+    width: 30%;
+}
+
+#ovn_fisk_container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 0%;
+}
+
+#ovn_fisk_container img{
+    padding: 0 1% 0 1%;
+    position: relative;
+}
+
+#fiskefad{
+    margin-bottom: 0;
+}
+
+#fisk {
+    width: 20%;
+    top: 60%;
+    left: 57%;
+}
+
+#braet_kopper_container{
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 15%;
+}
+
+#braet_kopper_container img{
+    padding: 0 1% 0 1%;
+    position: relative;
+}
+
+#kop{
+    width: 15%;
+    top: 101%;
+    right: 51%;
+}
+
+
+/*Styling af priser for køkken*/
+#ovnefaste_priser {
+    top: 35%;
+    left: 28%;
+    width: 20%;
+}
+
+#glas_priser {
+    top: 33%;
+    right: 28%;
+    width: 6%;
+}
+
+#fisk_priser{
+    top: 63%;
+    right: 33%;
+}
+
+#kopper_priser {
+    top: 80%;
+}
+
+#kop_pris {
+    top: 102.5%;
+    left: 33%;
+}
+
+#skaerebraet_priser{
+    top: 93%;
+    width: 10%;
+    right: 20%;
+}
+
+/*Styling af tekstboks - fisk og kopper */
+#fisk_boks{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 20%;
+    padding: 2% 2% 4% 2%;
+
+    top: 55%;
+    right: 13%;
+}
+
+#kopper_boks{
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 20%;
+    padding: 2%;
+    left: 15%;
+}
+
+#kokken {
+    margin-top: 5%;
+}
+
+/*Styling af stue*/
+
+#stue{
+    margin-top: 18%;
+    position: relative;
+}
+
+/*styling af billeder til stue*/
+
+#puder_container {
+    width: 40%;
+    position: relative;
+    margin-top: 5%;
+}
+#pynteting {
+    width: 30%;
+}
+
+#pynteting_tekst_container{
+    position: relative;
+}
+
+/* styling af priser for stuen*/
+
+#puder_pris {
+    top: 30%;
+}
+
+#tapet_priser {
+    top: 70%;
+}
+
+#pynteting_priser {
+    top: 70%;
+    width: 15%;
+    right: 37%;
+}
+
+
+/* styling af udendørs */
+
+#krukker {
+    padding: 0%;
+    width: 41%;
+}
+
+.urter_container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    margin-top: 5%;
+}
+
+.urter_container img {
+    width: 40%;
+}
+
+#blomster_container {
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+}
+#blomster_container img {
+    margin: 0;
+    padding: 0 5% 0 0%;
+}
+
+/* styling af priser for udendørs */
+#krukker_pris{
+    width: 20%;
+    left: 25%;
+    top: 70%;
+}
+
+#blomster_pris{
+    width: 10%;
+    left: 80%;
+    top: 70%;
+}
+
+/* Besøg og i bunden*/
+
+.besog_os {
+    font-size: 2rem;
+}
+
+#inspo_bund {
+    /*width: 20%;
+    padding: 1%;*/
+    border-radius: 40px;
+    margin-bottom: 0;
+}
+
+
+/* HER STARTER STYLE TIL OM BUTIKKEN UNDERSIDE TIL DESKTOP */
+
+/* video der skal vises på desktop */
+
+#video_desktop{
+    display: block;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+/* video fra mobile device der skal skjules */
+
+#video_mobil {
+    display: none;
+}
+
+/* overskrift og p til siden */
+
+#overskrift_butik{
+    font-size: 3rem;
+    padding: 5%;
+}
+
+.p_butikken {
+    font-size: 1.3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0;
+    
+}
+
+.p_butikken_nederst{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.3rem;
+}
+
+
+/* de 3 runde billeder */
+
+#billeder_butikken{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#billeder_butikken img {
+    width: 25%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* container med mette og hvid tekst */
+
+#mette_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image text";
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.hvid_p_butikken {
+    margin: auto;
+    margin-left: 10%;
+    grid-area: text;
+    margin-right: 10%;
+    padding-bottom: 4%;
+
+    font-size: 1rem;
+}
+
+#mette_hvid_img {
+    width: 80%;
+}
+
+#mette_hvid{
+    grid-area: image;
+}
+
+/* section  med infographic til desktop */
+
+#section_infographic{
+    display: flex;
+    flex-direction: column;
+}
+
+.infographic_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 5%; 
+    align-items: baseline;
+}
+
+.grid_item {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    padding: 10%;
+}
+
+.p_info{
+    margin: auto;
+    height: 100%;
+}
+
+/* cirkler */
+
+.cirkel {
+    display: none;
+}
+
+.cirkel_to {
+    margin: 5% auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background-color: #5d4b4b;
+    border-radius: 100%;
+    padding: 10px 20px;
+    width: 15%;
+    color: #edc6c6;
+    margin-top: 10%;
+}
+
+/* lodret streg */
+
+.hr_lodret {
+    display: none;
+}
+
+/* vandret streg */
+
+.hr_vandret_to{
+    height: 0.5px;
+    width: 65%;
+    background-color: #5d4b4b;
+}
+
+/* conatiner til griddet */
+
+.tal_grid_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 10px; 
+    align-items: center;
+    margin-left: 4%;
+    margin-right: 4%; 
+}
+
+/* items til griddet */
+
+.tal_grid_item {
+    display: flex;
+    justify-content: center; 
+}
+
+/* section med forhandlere */
+
+#forhandler_overskrift{
+    font-size: 3rem;
+}
+
+/* runde billeder af leverandører */
+
+.leverandor img{
+    width: 25%;
+}
+
+
+/* HER STARTER STYLE TIL SIDEN UNIKKE NIPS*/
+
+/* Tegninger*/
+
+.tegninger_unik {
+    width: 10%;
+}
+
+.tegninger_container {
+    justify-content: space-around;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+
+.tegning_unik_container{
+    padding-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* container til billedegalleriet*/
+
+#unik_container img{
+    width: 80%;
+    padding-bottom: 5%;
+}
+
+#unik_container {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 0;
+    padding-top: 3%;
+}
+
+/* billede der ikke blev vist på mobile men skal vises på desktop */
+
+#to_billeder{
+    display: block;
+    margin-left: 10%;
+    padding-bottom: 30%;
+}
+
+/* p til siden */
+
+#p_unik {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 1.3rem;
+    padding-bottom: 0;
+    margin-top: 2%;
+}
+
+/* container til Find mere inspiration */
+
+.unik_container_to img {
+    width: 80%;
+}
+
+.unik_container_to {
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+
+.unik_container_to > :nth-last-child(-n+1) {
+    grid-column: auto; /* Tilbage til standardværdi */
+    width: auto;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+
+/* HER STRATER VORES STYLE TIL DESKTOP TIL UNDERSIDEN KONTAKT */
+
+/* Her har vi stylet vores flexbox med kontaktoplysinger*/ 
+.kontaktoplysninger{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.oplysninger{
+    justify-content: center;
+    width: 50%;
+}
+
+.oplysninger p {
+    font-size: 1.2rem;
+}
+
+#findbutikken {
+    margin-top: 5%;
+}
+
+#aarhus {
+    margin-left: 15%;
+    padding-top: 0;
+}
+
+.oplysninger_illustration {
+    margin: 0% 15% 15% 15%;
+}
+
+.oplysninger_illustration p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.illustration_kontakt {
+    display: flex;
+    justify-content: center;
+}
+
+.illustration_kontakt img {
+    width: 70%;
+    margin-bottom: 0;
+}
+
+/* HER STARTER VORES STYLE TIL ERROR SIDEN PÅ DESKTOP */
+
+/* skrifter til siden */
+
+#error_overskrift{
+    font-size: 3rem;
+    padding-top: 1%; 
+}
+
+#p_error{
+    margin: auto;
+}
+
+
+/* motion graphic */
+
+#fejl_video{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+/* knapper på siden*/
+
+#knapper_error{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16%;
+    margin-right: 16%;
+
+}
+
+.knap_error{
+    width: 12%;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.knap_error
+
+
+/*Footer*/
+    
+/*logo der skal tilpasse sig til desktop*/
+
+#footer_logo_desktop {
+    display: block;
+    grid-column: 2;
+}
+
+#footer_logo_mobile {
+    display: none;
+}
+
+#footer_logo_desktop img {
+    width: 30%;
+}
+
+/*section for footeren*/
+
+.section_footer {
+    padding-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 5px; 
+    line-height: 3;
+}
+
+/*style af placering af tider, kontakt og findos */
+
+#tider_footer,
+#kontakt_footer,
+#findos_footer {
+    margin-top: 0;
+}
+
+/* Placerer kontakt i midten */
+
+#kontakt_footer {
+    grid-column: 2; 
+}
+
+/* Placerer grid-items under kontakt_footer */
+
+#kontakt_footer .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* grid items */
+.grid-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px; 
+    justify-content: center;
+}
+
+/* placering af folgos*/
+
+#folgos_footer {
+    grid-column: 2; 
+    text-align: center; 
+}
+
+/* hvid streg der ikke skal vises*/
+
+#hr_et{
+    display: none;
+}
+
+/* billedeikoner*/
+
+.billeder_footer{
+    margin-right: 3%;
+}
+
+/* skyggen rundt om logoet på desktop*/
+
+#logo_skygge_footer {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 80px; 
+}
+
+}
